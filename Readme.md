@@ -14,14 +14,14 @@ user code
 
 ## counter.l
 ```
-flex counter.l
-gcc lex.yy.c -ll -o counter.run
+flex -o counter.yy.c counter.l
+gcc counter.yy.c -ll -o counter.run
 ./counter.run < counter.code
 ```
 
 ## pascal.l
 ```
-flex pascal.l
-gcc lex.yy.c -ll -o pascal.run
+flex -o pascal.yy.c pascal.l
+gcc pascal.yy.c -ll -o pascal.run
 ./pascal.run < pascal.code
 ```
